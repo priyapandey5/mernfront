@@ -18,8 +18,8 @@ const Listings = () => {
     try {
       const response = await fetch(
         selectedCategory !== "All"
-          ? `https://mernfront-6na1.onrender.com/properties?category=${selectedCategory}`
-          : "https://mernfront-6na1.onrender.com/properties",
+          ? `https://mernback-1-05h8.onrender.com/properties?category=${selectedCategory}`
+          : "https://mernback-1-05h8.onrender.com/properties",
         {
           method: "GET",
         }
