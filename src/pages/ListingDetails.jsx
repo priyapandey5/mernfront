@@ -20,7 +20,7 @@ const ListingDetails = () => {
   const getListingDetails = async () => {
     try {
       const response = await fetch(
-        `https://mernfront-6na1.onrender.com/properties/${listingId}`,
+        `https://mernback-1-05h8.onrender.com/properties/${listingId}`,
         {
           method: "GET",
         }
@@ -75,7 +75,7 @@ const ListingDetails = () => {
         totalPrice: listing.price * dayCount,
       }
 
-      const response = await fetch("https://mernfront-6na1.onrender.com/bookings/create", {
+      const response = await fetch("https://mernback-1-05h8.onrender.com/bookings/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -106,7 +106,7 @@ const ListingDetails = () => {
         <div className="photos">
           {listing.listingPhotoPaths?.map((item) => (
             <img
-              src={`https://mernfront-6na1.onrender.com/${item.replace("public", "")}`}
+              src={`https://mernback-1-05h8.onrender.com/${item.replace("public", "")}`}
               alt="listing photo"
             />
           ))}
@@ -124,7 +124,7 @@ const ListingDetails = () => {
 
         <div className="profile">
           <img
-            src={`https://mernfront-6na1.onrender.com/${listing.creator.profileImagePath.replace(
+            src={`https://mernback-1-05h8.onrender.com/${listing.creator.profileImagePath.replace(
               "public",
               ""
             )}`}
