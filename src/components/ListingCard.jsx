@@ -50,7 +50,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {
     const response = await fetch(
-      `https://mernfront-6na1.onrender.com/users/${user?._id}/${listingId}`,
+      `https://mernback-1-05h8.onrender.com/users/${user?._id}/${listingId}`,
       {
         method: "PATCH",
         header: {
