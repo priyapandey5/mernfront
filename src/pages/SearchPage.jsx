@@ -17,7 +17,7 @@ const SearchPage = () => {
 
   const getSearchListings = async () => {
     try {
-      const response = await fetch(`https://mernfront-6na1.onrender.com/properties/search/${search}`, {
+      const response = await fetch(`https://mernback-1-05h8.onrender.com/properties/search/${search}`, {
         method: "GET"
       })
 
