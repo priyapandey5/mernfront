@@ -78,7 +78,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`https://mernfront-6na1.onrender.com/${photo?.replace("public", "")}`}
+                src={`https://mernback-1-05h8.onrender.com/${photo?.replace("public", "")}`}
                 alt={`photo ${index + 1}`}
               />
               <div
