@@ -50,7 +50,7 @@ const ListingCard = ({
   const patchWishList = async () => {
     if (user?._id !== creator._id) {
     const response = await fetch(
-      `https://mernback-kifu.onrender.com/users/${user?._id}/${listingId}`,
+      `https://mernfront-6na1.onrender.com/users/${user?._id}/${listingId}`,
       {
         method: "PATCH",
         header: {
@@ -78,7 +78,7 @@ const ListingCard = ({
           {listingPhotoPaths?.map((photo, index) => (
             <div key={index} className="slide">
               <img
-                src={`https://mernback-kifu.onrender.com/${photo?.replace("public", "")}`}
+                src={`https://mernfront-6na1.onrender.com/${photo?.replace("public", "")}`}
                 alt={`photo ${index + 1}`}
               />
               <div
