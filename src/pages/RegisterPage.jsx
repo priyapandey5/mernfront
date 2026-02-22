@@ -39,7 +39,7 @@ const RegisterPage = () => {
         register_form.append(key, formData[key])
       }
 
-      const response = await fetch("https://mernfront-6na1.onrender.com/auth/register", {
+      const response = await fetch("https://mernback-1-05h8.onrender.com/auth/register", {
         method: "POST",
         body: register_form
       })
