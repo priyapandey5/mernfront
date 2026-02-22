@@ -18,7 +18,7 @@ const TripList = () => {
     
     try {
       const response = await fetch(
-        `https://mernfront-6na1.onrender.com/users/${userId}/trips`,
+        `https://mernback-1-05h8.onrender.com/users/${userId}/trips`,
         {
           method: "GET",
         }
